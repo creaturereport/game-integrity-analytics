@@ -11,6 +11,7 @@ Understanding how bad actors exploit game mechanics is the first step in buildin
 
 **🚜 Scenario 1: Hunting "Farm" Accounts**
 In resource-driven mobile games, "Farm" accounts exist for one reason: to funnel massive amounts of stolen or botted resources to a main account. Finding the accounts bleeding the most resources is exactly how analysts hunt them down.
+> Note: Say a game was launched July 1st 2026, and 5000 players landed in said server
 
 * **Phase 1: Exploratory Data Analysis (Testing the Hypothesis)**
 Before building a complex model, I needed to test the waters. My first objective was to answer a foundational question: Are there players transferring highly abnormal amounts of resources immediately after the server's launch on July 1st, 2026?
