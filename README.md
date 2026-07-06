@@ -9,6 +9,11 @@ Understanding how bad actors exploit game mechanics is the first step in buildin
 
 * **API Hijackers:** The most dangerous cheaters don't even open the game visually. They use network interceptors to watch the hidden traffic between the game and the servers. Once they know the exact web address the game uses to say "Player X collected 100 wood," they write a script to send that exact message directly to the server thousands of times a second.
 
+**Scenario 1 - Farm Accounts**
+* Farm accounts exist for one reason: to funnel massive amounts of resources to a main account. Finding the accounts bleeding the most resources is exactly how you hunt them.
+
+* Regular players transfer some resources to their alliance members, but bots transfer millions. Ordering it from highest to lowest, the bots will bubble straight to the top for analyses.
+
 SQL script designed to parse mobile server population metrics and isolate resource-farming bot networks based on power-level stagnation and resource transfer anomalies
 
 -- Query Objective: Identify suspected resource-farming bots contributing to server decay.
