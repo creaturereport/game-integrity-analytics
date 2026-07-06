@@ -22,8 +22,9 @@ WHERE resources_transferred_out > 1000
 ORDER BY resources_transferred_out DESC
 LIMIT 100;
 Phase 2: The Production Model (Automating the Hunt)
-Because the exploratory query returned massive hits of suspicious accounts, I could dive deeper into the investigation. I engineered a master SQL script designed to isolate resource-farming bot networks based on power-level stagnation and resource transfer anomalies.
 ```
+> Because the exploratory query returned massive hits of suspicious accounts, I could dive deeper into the investigation. I engineered a master SQL script designed to isolate resource-farming bot networks based on power-level stagnation and resource transfer anomalies.
+
 
 **Query Objective:** Identify suspected resource-farming bots contributing to early server decay.
 Target Criteria: Accounts with extreme resource transfers, zero power growth, and recent inactivity.
