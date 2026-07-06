@@ -51,3 +51,8 @@ WHERE
 ORDER BY 
     resources_transferred_out DESC;
 ```
+Final analysis:
+
+The CASE Statement (The Auto-Labeler): Manually scrolling has been opted out by providing a master script that creates a brand-new column (integrity_flag) and automatically brands them as a 'High Probability Bot' or a 'Standard Player'.
+
+The Date Filter (DATE_SUB): It restricts the data to only look at accounts created within the last 30 days, which is crucial for monitoring rapid server decay on a fresh server.
