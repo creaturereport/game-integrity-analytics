@@ -15,7 +15,16 @@ Understanding how bad actors exploit game mechanics is the first step in buildin
 * Regular players transfer some resources to their alliance members, but bots transfer millions. Ordering it from highest to lowest, the bots will bubble straight to the top for analyses.
 
 SQL script designed to parse mobile server population metrics and isolate resource-farming bot networks based on power-level stagnation and resource transfer anomalies
-
+> To Test the waters, I wanted to answer my first question: are there any players who have outsources resources by more than 1,000 at the time of launch of the server? (July 1st, 2026)
+Below, find my code that tests that thought process. 
+```sql
+SELECT *
+FROM `healthy-bonsai-231119.dragonfire_data.dragon_fire_Server194`
+WHERE resources_transferred_out > 1000
+ORDER BY resources_transferred_out DESC
+LIMIT 100;
+```
+Because I got a hit, I can now dive deeper in my analysis and investigation.
 -- Query Objective: Identify suspected resource-farming bots contributing to server decay.
 -- Target criteria: Accounts with high resource transfers, zero power growth, and recent inactivity.
 
