@@ -1,5 +1,7 @@
 # Game Integrity Analytics
 
+**Project Type:** Self-directed scenario project — I built this game-integrity scenario and its dataset myself to practice SQL bot and farm-account detection. No client or employer was involved.
+
 **🎮 The Botting Threat Landscape**
 Understanding how bad actors exploit game mechanics is the first step in building data queries to stop them. Here is a breakdown of the primary exploitation methods:
 
@@ -52,7 +54,7 @@ WHERE
 ORDER BY 
     resources_transferred_out DESC;
 ```
-**📊 Final Analysis & Business Impact:**
+**📊 Final Analysis & What It Shows:**
 
 * **The Auto-Labeler (CASE Statement):** Manual scrolling is obsolete. This script automatically evaluates every player and creates a new integrity_flag column, instantly branding offenders as a 'High Probability Bot' so the security team can issue a targeted ban wave.
 
